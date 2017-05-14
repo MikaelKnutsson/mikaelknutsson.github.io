@@ -138,7 +138,7 @@ footer{
 
 .container-2 {
   position: relative;
-  width: 50%;
+  width: 100%;
 }
 
 
@@ -232,7 +232,7 @@ h2 {
 	font-family: Lato;
 	color: #666666;
 	letter-spacing: 3px;
-	margin-top: 5px;
+	margin-top: 35px;
 }
 
 .project-content {
@@ -255,17 +255,16 @@ h2 {
 }
 
 .project-description {
-	width: 70%;
+	width: 90%;
 	text-align: justify;
 }
 
-.project-parameters {
-	width: 30%;
-}
 
 .parameter-title {
 	font-size: 0.8rem;
 	color: #b8b5b5;
+  top: 50px;
+  text-align: center;
 }
 
 .parameter-line {
@@ -274,7 +273,17 @@ h2 {
 	width: 100%;
 }
 
+div.vertical-line{
+     width: 1px; /* Line width */
+     background-color:  #d4d4d4; /* Line color */
+     height: 100%; /* Override in-line if you want specific height. */
+     float: left; /* Causes the line to float to left of content.
+       You can instead use position:absolute or display:inline-block
+       if this fits better with your design */
+   }
+
 .project-parameter {
+  text-align: center;
 	margin-bottom: 15px;
 }
 
@@ -731,12 +740,8 @@ h2 {
 
 	.project-content {
 		flex-direction: column;
-		align-items: center;
 	}
 
-	.project-parameters {
-		width: 90%;
-	}
 
 	.project-description {
 		width: 90%;
