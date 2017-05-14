@@ -16,7 +16,7 @@
 
     <!-- Custom CSS -->
     <link href="css/portfolio-item.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/elegant-font/code/style.css">
+    <link rel="stylesheet" href="elegant-font/code/style.css">
     <link href="https://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -60,7 +60,7 @@
 
 
     <div class="about-wrapper">
-    		<img src="img/arvid_square.jpg" alt="Mikael Knutsson"/>
+    		<img src="img/mikaelknutsson.jpg" alt="Mikael Knutsson"/>
     		<div class="about">
     			<div class="about-title">Hello.</div>
     			<p>
@@ -83,12 +83,6 @@
 
 <div id="app-7">
   <ol>
-    <!--
-      Now we provide each todo-item with the todo object
-      it's representing, so that its content can be dynamic.
-      We also need to provide each component with a "key",
-      which will be explained later.
-    -->
     <todo-item
       v-for="item in groceryList"
       v-bind:todo="item"
@@ -97,82 +91,52 @@
   </ol>
 </div>
 
+<a class="anchor" name="projects"></a>
+<h2 class="projects-title">PROJECTS</h2>
+<div class="topic-line"></div>
 
-      <a class="anchor" name="projects"></a>
-	<h2 class="projects-title">PROJECTS</h2>
-	<div class="topic-line"></div>
+<div class="projects-wrapper">
+<div v-for="project in projects" class="project">
+  <div class="slider">
+    <img v-for="image in project.images" src="img/PosterCCprint.jpg" class="slider-cell">
+  </div>
+  <div class="project-content">
+    <div class="project-parameters">
+      <div class="parameter-title">
+        DATE
+      </div>
+      <div class="parameter-line"></div>
+      <div class="project-parameter">
+        2017-04-03
+      </div>
+      <div class="parameter-title">
+        TIMEFRAME
+      </div>
+      <div class="parameter-line"></div>
+      <div class="project-parameter">
+        3 weeks
+      </div>
+      <div class="parameter-title">
+        TOOLS
+      </div>
+      <div class="parameter-line"></div>
+      <div class="project-parameter">
+        Javascript
+      </div>
+    </div>
+    <div class="project-description">
+      <h3 class="project-title">{{project.title}}</h3>
+      gick bra osv.
+    </div>
+  </div>
+</div>
+</div>
 
-
-  <div class="projects-wrapper" id="app">
-		<div v-for="project in projects" class="project">
-			<div class="slider">
-				<img v-for="image in project.images" data-flickity-lazyload="{{image}}" class="slider-cell">
-			</div>
-			<div class="project-content">
-				<div class="project-parameters">
-					<div class="parameter-title">
-						DATE
-					</div>
-					<div class="parameter-line"></div>
-					<div class="project-parameter">
-						{{project.date}}
-					</div>
-					<div class="parameter-title">
-						TIMEFRAME
-					</div>
-					<div class="parameter-line"></div>
-					<div class="project-parameter">
-						{{project.timeframe}}
-					</div>
-					<div class="parameter-title">
-						TOOLS
-					</div>
-					<div class="parameter-line"></div>
-					<div class="project-parameter">
-						{{project.tools}}
-					</div>
-				</div>
-				<div class="project-description">
-					<h3 class="project-title">{{project.title}}</h3>
-					{{{project.description}}}
-				</div>
-			</div>
-		</div>
-	</div>
 
 
 
     <div class="container">
 
-        <!-- /.row -->
-
-
-        <!-- /.row -->
-<!--
-        <div class="sticky">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">Start Bootstrap</a>
-            </div>
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li>
-                        <a href="#">About</a>
-                    </li>
-                    <li>
-                        <a href="#">Services</a>
-                    </li>
-                    <li>
-                        <a href="#">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
 
         <!-- Portfolio Item Row -->
         <div class="row">
@@ -301,7 +265,6 @@
     <!-- Bootstrap Core JavaScript -->
     <!-- Javascript -->
   <script src="js/jquery-1.11.1.min.js"></script>
-  <script src="bootstrap/js/bootstrap.min.js"></script>
   <script src="js/jquery.backstretch.min.js"></script>
   <script src="js/wow.min.js"></script>
   <script src="js/retina-1.1.0.min.js"></script>
@@ -312,10 +275,7 @@
   <script src="js/scripts.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="https://unpkg.com/vue"></script>
-  <script type="text/javascript" src="js/vue.min.js"></script>
 	<script type="text/javascript" src="js/vue.min.js"></script>
-	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
-	<script type="text/javascript" src="js/flickity.pkgd.min.js"></script>
 	<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
 	<script src="js/main.js"></script>
   <script src="js/app.js"></script>

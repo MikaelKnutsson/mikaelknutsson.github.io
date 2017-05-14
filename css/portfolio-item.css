@@ -160,15 +160,27 @@ h1 {
     color: #EEEEEE;
 }
 
+h2 {
+	font-family: Lato;
+	color: #555555;
+	margin-top: 50px;
+	text-align: center;
+	letter-spacing: 5px;
+}
+
+.projects-title {
+	margin-bottom: 50px;
+	margin-top: 50px;
+}
+
 
 .about-wrapper {
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#565656+0,2d2d2d+100 */
-	background: #565656; /* Old browsers */
-	background: -moz-radial-gradient(center, ellipse cover,  #565656 0%, #2d2d2d 100%); /* FF3.6-15 */
-	background: -webkit-radial-gradient(center, ellipse cover,  #565656 0%,#2d2d2d 100%); /* Chrome10-25,Safari5.1-6 */
-	background: radial-gradient(ellipse at center,  #565656 0%,#2d2d2d 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#565656', endColorstr='#2d2d2d',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-
+  background:
+  linear-gradient(135deg, #708090 22px, #d9ecff 22px, #d9ecff 24px, transparent 24px, transparent 67px, #d9ecff 67px, #d9ecff 69px, transparent 69px),
+  linear-gradient(225deg, #708090 22px, #d9ecff 22px, #d9ecff 24px, transparent 24px, transparent 67px, #d9ecff 67px, #d9ecff 69px, transparent 69px)0 64px;
+  background-color:#708090;
+  background-size: 64px 128px
 
 	padding-top: 60px;
 	padding-bottom: 60px;
@@ -201,6 +213,88 @@ h1 {
 	max-width: 500px;
 	text-align: justify;
 	margin-right: 30px;
+}
+
+
+.projects-wrapper {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.project {
+	max-width: 700px;
+	margin-bottom: 180px;
+}
+
+.project-title {
+	font-family: Lato;
+	color: #666666;
+	letter-spacing: 3px;
+	margin-top: 5px;
+}
+
+.project-content {
+	display: flex;
+	justify-content: center;
+	margin-top: 50px;
+	color: #666666;
+}
+
+.project:nth-child(even) .project-content {
+	flex-direction: row-reverse;
+}
+
+.project:nth-child(even) .project-content .project-description {
+	padding-right: 60px;
+}
+
+.project:nth-child(odd) .project-content .project-description {
+	padding-left: 60px;
+}
+
+.project-description {
+	width: 70%;
+	text-align: justify;
+}
+
+.project-parameters {
+	width: 30%;
+}
+
+.parameter-title {
+	font-size: 0.8rem;
+	color: #b8b5b5;
+}
+
+.parameter-line {
+	background-color: #d4d4d4;
+	height: 1px;
+	width: 100%;
+}
+
+.project-parameter {
+	margin-bottom: 15px;
+}
+
+.slider {
+	margin-bottom: 2em;
+	width: 100%;
+	max-width: 800px;
+}
+
+.slider-cell {
+	width: 100%;
+}
+
+.description-line {
+	background-color: #b8b8b8;
+	width: 70%;
+	height: 1px;
+	margin: 0 auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
 
 
