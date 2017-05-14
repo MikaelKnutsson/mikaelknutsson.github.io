@@ -1,1 +1,327 @@
-"hello world" 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Mikael Knutsson</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/portfolio-item.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/elegant-font/code/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+
+
+  <div id="loader-wrapper">
+  <div id="loader"></div>
+
+  <div class="loader-section section-left"></div>
+  <div class="loader-section section-right"></div>
+
+</div>
+
+
+<div class="navbar-wrapper">
+		<div class="name">
+			<h1>MIKAEL KNUTSSON</h1>
+		</div>
+		<div class="navbar">
+			<a href="#about" class="link-red">ABOUT ME</a>
+			<a href="#projects" class="link-green">PROJECTS</a>
+			<a href="#contact" class="link-blue">CONTACT</a>
+		</div>
+	</div>
+
+  	<a class="anchor" name="about"></a>
+<div class="colored-line"><span class="colored-line-red"></span><span class="colored-line-green"></span><span class="colored-line-blue"></span></div>
+    <!-- Page Content -->
+
+
+    <div class="about-wrapper">
+    		<img src="img/arvid_square.jpg" alt="Arvid Sätterkvist"/>
+    		<div class="about">
+    			<div class="about-title">Hello.</div>
+    			<p>
+    				I'm currently on my 5th year to get my masters degree in Media Technology at the Royal Institute of Technology in Stockholm.
+    			</p>
+    			<p>
+    				My interests include making innovative, useful and fun things and I'm a big believer in using technology and design to help people improve their daily life.
+    			</p>
+    			<p>
+    				I enjoy the whole iterative process from idea and prototype to finalised design and product.
+    			</p>
+    			<p>
+    				I am always open to learn new things and enjoys a good challenge.
+    			</p>
+    			<div class="signature">Arvid Sätterkvist</div>
+    		</div>
+    	</div>
+
+      <div id="app">
+  {{ message }}
+</div>
+
+<div id="app-7">
+  <ol>
+    <!--
+      Now we provide each todo-item with the todo object
+      it's representing, so that its content can be dynamic.
+      We also need to provide each component with a "key",
+      which will be explained later.
+    -->
+    <todo-item
+      v-for="item in groceryList"
+      v-bind:todo="item"
+      v-bind:key="item.id">
+    </todo-item>
+  </ol>
+</div>
+
+
+      <a class="anchor" name="projects"></a>
+	<h2 class="projects-title">PROJECTS</h2>
+	<div class="topic-line"></div>
+
+
+  <div class="projects-wrapper" id="app">
+		<div v-for="project in projects" class="project">
+			<div class="slider">
+				<img v-for="image in project.images" data-flickity-lazyload="{{image}}" class="slider-cell">
+			</div>
+			<div class="project-content">
+				<div class="project-parameters">
+					<div class="parameter-title">
+						DATE
+					</div>
+					<div class="parameter-line"></div>
+					<div class="project-parameter">
+						{{project.date}}
+					</div>
+					<div class="parameter-title">
+						TIMEFRAME
+					</div>
+					<div class="parameter-line"></div>
+					<div class="project-parameter">
+						{{project.timeframe}}
+					</div>
+					<div class="parameter-title">
+						TOOLS
+					</div>
+					<div class="parameter-line"></div>
+					<div class="project-parameter">
+						{{project.tools}}
+					</div>
+				</div>
+				<div class="project-description">
+					<h3 class="project-title">{{project.title}}</h3>
+					{{{project.description}}}
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+    <div class="container">
+
+        <!-- /.row -->
+
+
+        <!-- /.row -->
+<!--
+        <div class="sticky">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Start Bootstrap</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Services</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Portfolio Item Row -->
+        <div class="row">
+          <div class="container-2">
+            <div class="col-md-8">
+                <img class="img-responsive" src="http://i67.tinypic.com/efpdeb.jpg"  alt="">
+                <div class="overlay">
+                    <div class="text">
+                          <h3>Project Description</h3>
+                          <h3>Project Details</h3>
+                          <ul>
+                              <li>Lorem Ipsum</li>
+                              <li>Dolor Sit Amet</li>
+                              <li>Consectetur</li>
+                              <li>Adipiscing Elit</li>
+                          </ul>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Related Projects Row -->
+        <div class="row">
+
+            <div class="col-lg-12">
+                <h3 class="page-header">Related Projects</h3>
+            </div>
+
+            <div class="col-sm-3 col-xs-6">
+                <a href="#">
+                    <img class="img-responsive portfolio-item" src="http://placehold.it/500x300" alt="">
+                </a>
+            </div>
+
+            <div class="col-sm-3 col-xs-6">
+                <a href="#">
+                    <img class="img-responsive portfolio-item" src="http://placehold.it/500x300" alt="">
+                </a>
+            </div>
+
+            <div class="col-sm-3 col-xs-6">
+                <a href="#">
+                    <img class="img-responsive portfolio-item" src="http://placehold.it/500x300" alt="">
+                </a>
+            </div>
+
+            <div class="col-sm-3 col-xs-6">
+                <a href="#">
+                    <img class="img-responsive portfolio-item" src="http://placehold.it/500x300" alt="">
+                </a>
+            </div>
+
+        </div>
+        <!-- /.row -->
+
+        <hr>
+
+        <!-- Contact us (block 2) -->
+        <div class="contact-wrapper">
+	        <div class="container">
+	            <div class="row">
+	                <div class="col-sm-12 block-2 section-description wow fadeIn">
+	                	<h2>Kontakta mig</h2>
+	                	<div class="divider-1 wow fadeInUp"><span></span></div>
+	                    <p>
+	                    	For every question, information or just to say "Hi", here is how you can get in touch with us. Send us an email or come visit us!
+	                    </p>
+	                </div>
+	            </div>
+	            <div class="row">
+	            	<div class="col-sm-4 block-2-box block-2-left contact-form wow fadeInLeft">
+	            		<h3>Email us</h3>
+	                    <form role="form" action="assets/contact.php" method="post">
+	                    	<div class="form-group">
+	                    		<label class="sr-only" for="contact-email">Email</label>
+	                        	<input type="text" name="email" placeholder="Email..." class="contact-email form-control" id="contact-email">
+	                        </div>
+	                        <div class="form-group">
+	                        	<label class="sr-only" for="contact-subject">Subject</label>
+	                        	<input type="text" name="subject" placeholder="Subject..." class="contact-subject form-control" id="contact-subject">
+	                        </div>
+	                        <div class="form-group">
+	                        	<label class="sr-only" for="contact-message">Message</label>
+	                        	<textarea name="message" placeholder="Message..." class="contact-message form-control" id="contact-message"></textarea>
+	                        </div>
+	                        <button type="submit" class="btn">Send it</button>
+	                    </form>
+	            	</div>
+	            	<!--<div class="col-sm-4 block-2-box block-2-right contact-address wow fadeInUp">
+	            		<h3>Visit us</h3>
+	                    <p><span aria-hidden="true" class="icon_pin"></span>Via Principe Amedeo 9, Torino, Italy</p>
+	                    <p><span aria-hidden="true" class="icon_phone"></span>Phone: 0039 333 12 68 347</p>
+	                    <p><span aria-hidden="true" class="icon_mail"></span>Email: <a href="">hi@yourdomain.com</a></p>
+	            	</div> -->
+	            </div>
+	            <div class="contact-icon-container">
+            		<span aria-hidden="true" class="icon_mail"></span>
+            	</div>
+	        </div>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Mikael Knutsson 2017</p>
+                </div>
+                <div class="col-sm-5 footer-social">
+                    	<a href="#"><i class="fa fa-facebook"></i></a>
+	                	<a href="#"><i class="fa fa-dribbble"></i></a>
+	                    <a href="#"><i class="fa fa-twitter"></i></a>
+	                    <a href="#"><i class="fa fa-google-plus"></i></a>
+	                    <a href="#"><i class="fa fa-pinterest"></i></a>
+                    </div>
+            </div>
+            <!-- /.row -->
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <!-- Javascript -->
+  <script src="js/jquery-1.11.1.min.js"></script>
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+  <script src="js/jquery.backstretch.min.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script src="js/retina-1.1.0.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/waypoints.min.js"></script>
+  <script src="js/jquery.countTo.js"></script>
+  <script src="js/masonry.pkgd.min.js"></script>
+  <script src="js/scripts.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/vue"></script>
+  <script type="text/javascript" src="js/vue.min.js"></script>
+	<script type="text/javascript" src="js/vue.min.js"></script>
+	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="js/flickity.pkgd.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+	<script src="js/main.js"></script>
+  <script src="js/app.js"></script>
+
+</body>
+
+</html>
