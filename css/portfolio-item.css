@@ -25,6 +25,8 @@
 
 footer {
     margin: 50px 0;
+    font-size: 15px;
+    text-align: center;
 }
 
 
@@ -116,6 +118,27 @@ footer{
 	transition:.5s;
 }
 
+.link-red:hover {
+	color: #ee6164;
+	background-color: #f7f7f7;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.link-green:hover {
+	color: #5bc799;
+	background-color: #f7f7f7;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.link-blue:hover {
+	color: #448AFF;
+	background-color: #f7f7f7;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
 
 .overlay {
   position: absolute;
@@ -184,9 +207,55 @@ h2 {
 }
 
 .projects-title {
+  font-family: Lato;
 	margin-bottom: 20px;
 	margin-top: 70px;
 }
+
+h2.contact-title{
+  text-align: center;
+    color: white;
+    padding-bottom: 100px;
+}
+
+.contact-items{
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.contact-items a{
+
+    font-family: Lato;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  font-weight: 400;
+  text-decoration:none;
+}
+
+a:hover,
+a:focus {
+	color:#999;
+}
+
+.contact-icon-container{
+  text-align: center;
+  font-size: 50px;
+  font-weight: 400;
+}
+
+.contact-icon-container a{
+  color: white;
+  font-size: 40px;
+  font-weight: 400;
+  text-decoration:none;
+}
+
+.contact-icon-container a:hover, a:focus{
+  	color:#999;
+}
+
+
 
 
 .about-wrapper {
