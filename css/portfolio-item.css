@@ -126,7 +126,7 @@ footer{
 }
 
 .link-green:hover {
-  color: #5bc799;
+  color: #cccc00;
   background-color: #f7f7f7;
   padding-left: 10px;
   padding-right: 10px;
@@ -936,9 +936,9 @@ Inlined to avoid required HTTP connection: h5bp.com/r
     height: 100%;
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ee6164+0,5bc799+15,5bc799+85,448aff+100 */
     background: #ee6164; /* Old browsers */
-    background: -moz-linear-gradient(left,  #ee6164 0%, #5bc799 15%, #5bc799 85%, #448aff 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(left,  #ee6164 0%,#5bc799 15%,#5bc799 85%,#448aff 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right,  #ee6164 0%,#5bc799 15%,#5bc799 85%,#448aff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    background: -moz-linear-gradient(left,  #ee6164 0%, #cccc00 15%, #cccc00 85%, #448aff 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  #ee6164 0%,#cccc00 15%,#cccc00 85%,#448aff 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  #ee6164 0%,#cccc00 15%,#cccc00 85%,#448aff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ee6164', endColorstr='#448aff',GradientType=1 ); /* IE6-9 */
   }
 
