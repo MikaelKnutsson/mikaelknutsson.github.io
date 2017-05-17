@@ -326,12 +326,8 @@ a:focus {
   text-align: center;
   font-size: 20px;
   padding: 20px;
-  margin-right: 250px;
-  right: 100px;
-  width: 170px;
+  width: 150px;
   transition: all 0.5s;
-  cursor: pointer;
-  margin: 5px;
 }
 
 .button span {
@@ -339,6 +335,7 @@ a:focus {
   display: inline-block;
   position: relative;
   transition: 0.5s;
+
 }
 
 .button span:after {
@@ -348,6 +345,7 @@ a:focus {
   top: 0;
   right: -20px;
   transition: 0.5s;
+
 }
 
 .button:hover span {
@@ -357,6 +355,7 @@ a:focus {
 .button:hover span:after {
   opacity: 1;
   right: 0;
+
 }
 
 
@@ -1064,6 +1063,7 @@ Inlined to avoid required HTTP connection: h5bp.com/r
 
 
   button.btn {
+
     height: 52px;
     margin: 0;
     padding: 0 20px;
