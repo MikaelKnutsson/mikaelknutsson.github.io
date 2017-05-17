@@ -139,6 +139,12 @@ footer{
   padding-right: 10px;
 }
 
+.signature{
+  text-align: right;
+  font-weight: 500;
+  font-style: italic;
+}
+
 
 .overlay {
   position: absolute;
@@ -263,9 +269,7 @@ a:focus {
 
 .about-wrapper {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#565656+0,2d2d2d+100 */
-  background:
-  linear-gradient(135deg, #708090 22px, #d9ecff 22px, #d9ecff 24px, transparent 24px, transparent 67px, #d9ecff 67px, #d9ecff 69px, transparent 69px),
-  linear-gradient(225deg, #708090 22px, #d9ecff 22px, #d9ecff 24px, transparent 24px, transparent 67px, #d9ecff 67px, #d9ecff 69px, transparent 69px)0 64px;
+
   background-color:#708090;
 
   padding-top: 60px;
@@ -285,14 +289,20 @@ a:focus {
   font-family: Lato;
   margin-bottom: 20px;
   letter-spacing: 2px;
+  text-align: center;
 }
 
 .about-wrapper img {
-  width: 150px;
-  border-radius: 50%;
-  border: solid #bbbbbb 5px;
+  align-items: center;
+  width: 170px;
+  border-radius: 35%;
+  border: solid #ffffff 3px;
   margin-right: 60px;
   margin-left: 60px;
+}
+
+.about-wrapper p{
+  color: #e8e8e8;
 }
 
 .about {
